@@ -27,7 +27,11 @@
 }
 
 .left-bar {
-  @apply flex flex-col w-90 h-screen gap-5 p-4 border-r border-gray-500
+  @apply flex flex-col min-w-70 max-w-fit fixed h-screen left-0 gap-5 p-4 border-r border-gray-500;
+}
+
+.right-bar {
+  @apply flex flex-col min-w-70 max-w-fit h-screen fixed right-0 gap-5 p-4 border-r border-gray-500;
 }
 
 .cardlist-selected {
@@ -35,7 +39,7 @@
 }
 
 .description {
-  @apply text-[.9rem] text-stone-400 font-semibold
+  @apply text-[0.9rem] text-stone-400 font-semibold;
 }
 
 .card-1 {
